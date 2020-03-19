@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <title>SINAPSE - Grupo de estudos</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="logo.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="">
+
+    <meta charset="utf-8">
+    <meta name="description" content="A plataforma para você encontrar sua companhia de estudos">
+    <meta name="keywords" content="Sinapse, estudar, grupos">
+    <!-- FavIcon -->
+    <link rel="icon" href="imagens/favicon midnight blue.svg">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <header class="navbar">
+        <!-- ínicio header -->
+        <a href="/" class="logo">
+            <h1 class="logo__replacement">Sinapse</h1>
+        </a>
+        <img src="imagens/menu.svg" class="navbar__trigger" alt="Menu" title="Menu">
+
+        <nav class="navbar__menu">
+            <a href="login.html"><i class="fas fa-graduation-cap fa-1x"></i> LOGIN</a>
+            <a href="cadastro.html"><i class="fas fa-graduation-cap fa-1x"></i> CADASTRE-SE</a>
+            <a href="premium.html"><i class="fas fa-graduation-cap fa-1x"></i> PREMIUM</a>
+            <a href="sobre.html"><i class="fas fa-graduation-cap fa-1x"></i> SOBRE</a>
+        </nav>
+    </header>
+    <!-- fim do header -->
+
+    <main>
+        <section class="register-section">
+            <div class="register-section__item">
+                <h2 class="welcome-sub-info"> Entre com:</h2>
+                <div class="social-login">
+                    <a href="" class="submit-f">Facebook</a><a href="" class="submit-g">Google</a>
+                </div>
+                <hr>
+                <h3 class="welcome-sub-info">Ou faça seu cadastro abaixo:</h3>
+                <form>
+                    <div class="input-field">
+                        <input type="text" id="nome" name="nome" required="required">
+                        <label for="nome">Nome </label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" id="lname" name="email" required="required">
+                        <label for="email">E-mail</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="senha" id="senha" name="senha" required="required">
+                        <label for="senha">Senha</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="senha" id="confirmarsenha" name="confirmarsenha" required="required">
+                        <label for="confirmarsenha">Confirmar Senha</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="estados">Estados</label>
+                        <select class="form-control" id="estados">
+                    <option disabled selected>Selecione</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                  </select>
+                    </div>
+
+
+                    <div class="input-field">
+                        <input type="text" id="cidade" name="cidade" required="required">
+                        <label for="cidade">Cidade</label>
+                    </div>
+
+
+                    <div class="bt">
+                        <a href="interesse.html" class="button-proximo">PRÓXIMO </a>
+
+                    </div>
+                </form>
+
+            </div>
+            <div class="register-section__item">
+                <img class="estudos" src="imagens/estudos.png">
+            </div>
+        </section>
+
+    </main>
+
+    <script src="navbar.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="mostrarsenha.js"></script>
+</body>
+
+</html>

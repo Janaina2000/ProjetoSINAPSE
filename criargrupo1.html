@@ -15,7 +15,6 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="">
-
     <meta charset="utf-8">
     <meta name="description" content="A plataforma para você encontrar sua companhia de estudos">
     <meta name="keywords" content="Sinapse, estudar, grupos">
@@ -34,14 +33,8 @@
 
         <nav class="navbar__menu">
             <a href="login.html"><i class="fas fa-graduation-cap fa-1x"></i> LOGIN</a>
-
-
             <a href="cadastro.html"><i class="fas fa-graduation-cap fa-1x"></i> CADASTRE-SE</a>
-
-
             <a href="premium.html"><i class="fas fa-graduation-cap fa-1x"></i> PREMIUM</a>
-
-
             <a href="sobre.html"><i class="fas fa-graduation-cap fa-1x"></i> SOBRE</a>
         </nav>
     </header>
@@ -50,43 +43,31 @@
     <main>
         <section class="register-section">
             <div class="register-section__item">
-                <h1 class="welcome-info">Seja bem-vindo de volta ao SINAPSE!</h1>
-                <h2 class="welcome-sub-info"> Entre com:</h2>
-                <div class="social-login">
-                    <a href="" class="submit-f">Facebook</a><a href="" class="submit-g">Google</a>
-                </div>
-                <hr>
-                <h3 class="welcome-sub-info">Ou faça seu login usando o endereço de email e senha abaixo:</h3>
-
                 <form action="home.html">
-
-
-                    <div class="input-field">
-                        <input type="text" id="email" name="email" required="required">
-                        <label for="email">Email</label>
-                        <br>
+                    <h1 class="welcome-info">Nome do Grupo</h1>
+                    <div class="center">
+                        <img src="imagens/grupoperfil.png" class=" image-circle" alt="usuario" id="imagemusuario">
+                        <h6>Seleciona uma foto diferente...</h6>
+                        <input type="file" onclick="trocarFoto()" class="text-center center-block file-upload">
                     </div>
-
+                    <br>
+                    <h2 class="welcome-sub-info"> Informa a localização caso queira encontrar pessoas proximas!</h2>
                     <div class="input-field">
-                        <input type="password" class="senha" id="senha" name="senha" required="required">
-                        <label for="senha">Senha</label>
-                        <div class="mostrarsenha" onclick="mostrarSenha()"><img src="imagens/bxs-show.svg" alt="Mostrar senha"></div>
-                    </div><br>
-                    <input type="checkbox" id="lembredemim" name="lembredemim">
-                    <label for="checkbox"> Lembre-se de mim</label><br>
-                    <input class="submit-entrar " type="submit" value="ENTRAR">
+                        <input type="text" id="localizacao" name="localizacao">
+                        <label for="localizacao">Localização </label><br>
+                    </div>
+                    <br>
+                    <input class="submit-entrar" type="submit" value="CRIAR GRUPO">
 
-                    <a href="cadastro.html" class="negrito link right">Cadastre-se</a>
-                    <hr>
                 </form>
             </div>
             <div class="register-section__item">
-                <img class="coruja" src="imagens/coruja-prof.png">
+                <img class="grupodeestudos" src="imagens/grupodeestudo.png">
             </div>
         </section>
 
     </main>
-    <script src="mostrarsenha.js"></script>
+
     <script src="navbar.js"></script>
 </body>
 

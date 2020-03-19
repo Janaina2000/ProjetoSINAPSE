@@ -15,7 +15,6 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="">
-
     <meta charset="utf-8">
     <meta name="description" content="A plataforma para você encontrar sua companhia de estudos">
     <meta name="keywords" content="Sinapse, estudar, grupos">
@@ -34,14 +33,8 @@
 
         <nav class="navbar__menu">
             <a href="login.html"><i class="fas fa-graduation-cap fa-1x"></i> LOGIN</a>
-
-
             <a href="cadastro.html"><i class="fas fa-graduation-cap fa-1x"></i> CADASTRE-SE</a>
-
-
             <a href="premium.html"><i class="fas fa-graduation-cap fa-1x"></i> PREMIUM</a>
-
-
             <a href="sobre.html"><i class="fas fa-graduation-cap fa-1x"></i> SOBRE</a>
         </nav>
     </header>
@@ -50,43 +43,42 @@
     <main>
         <section class="register-section">
             <div class="register-section__item">
-                <h1 class="welcome-info">Seja bem-vindo de volta ao SINAPSE!</h1>
-                <h2 class="welcome-sub-info"> Entre com:</h2>
-                <div class="social-login">
-                    <a href="" class="submit-f">Facebook</a><a href="" class="submit-g">Google</a>
-                </div>
-                <hr>
-                <h3 class="welcome-sub-info">Ou faça seu login usando o endereço de email e senha abaixo:</h3>
-
                 <form action="home.html">
-
-
+                    <h1 class="welcome-info">Crie grupos para se conectar com pessoas de mesmo interesse!</h1>
                     <div class="input-field">
-                        <input type="text" id="email" name="email" required="required">
-                        <label for="email">Email</label>
-                        <br>
+                        <input type="text" id="nomedogrupo" name="nomedogrupo" required="required">
+                        <label for="nomedogrupo">Nome do grupo </label><br>
+                    </div>
+                    <h2 class="welcome-sub-info"> Agora selecione se deseja criar um grupo público ou privado</h2>
+                    <br>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="grupo" id="grupopublico" value="grupopublico" checked>
+                        <label class="form-check-label" for="grupopublico">
+                           <span class="cor_titulogrupo">Grupo público</span> - permite que somente pessoas que qualquer pessoa que tenha o mesmo interesse que você adentre no seu grupo.
+                     </label>
                     </div>
 
-                    <div class="input-field">
-                        <input type="password" class="senha" id="senha" name="senha" required="required">
-                        <label for="senha">Senha</label>
-                        <div class="mostrarsenha" onclick="mostrarSenha()"><img src="imagens/bxs-show.svg" alt="Mostrar senha"></div>
-                    </div><br>
-                    <input type="checkbox" id="lembredemim" name="lembredemim">
-                    <label for="checkbox"> Lembre-se de mim</label><br>
-                    <input class="submit-entrar " type="submit" value="ENTRAR">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="grupo" id="grupoprivado" value="grupoprivado">
+                        <label class="form-check-label" for="grupoprivado">
+                           <span class="cor_titulogrupo">Grupo privado</span> - permite que somente pessoas que você adicionar tenha acesso ao seu grupo. Qualquer pessoa que queira adentrar no seu grupo terá que solicitar permissão.
+                     </label>
+                    </div>
+                    <br>
+                    <div class="bt">
+                        <a href="criargrupo1.html" class="button-proximo">PRÓXIMO </a>
 
-                    <a href="cadastro.html" class="negrito link right">Cadastre-se</a>
-                    <hr>
+                    </div>
+
                 </form>
             </div>
             <div class="register-section__item">
-                <img class="coruja" src="imagens/coruja-prof.png">
+                <img class="grupodeestudos" src="imagens/grupodeestudo.png">
             </div>
         </section>
 
     </main>
-    <script src="mostrarsenha.js"></script>
+
     <script src="navbar.js"></script>
 </body>
 

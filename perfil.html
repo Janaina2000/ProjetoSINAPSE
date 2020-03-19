@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <title>SINAPSE - Grupo de estudos</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="logo.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="description" content="A plataforma para você encontrar sua companhia de estudos">
+    <meta name="keywords" content="Sinapse, estudar, grupos">
+    <!-- FavIcon -->
+    <link rel="icon" href="imagens/favicon midnight blue.svg">
+
+</head>
+
+<body>
+    <header class="navbar">
+        <!-- ínicio header -->
+        <a href="/" class="logo">
+            <h1 class="logo__replacement">Sinapse</h1>
+        </a>
+        <img src="imagens/menu.svg" class="navbar__trigger" alt="Menu" title="Menu">
+
+        <nav class="navbar__menu">
+            <a href="login.html"><i class="fas fa-graduation-cap fa-1x"></i> LOGIN</a>
+            <a href="cadastro.html"><i class="fas fa-graduation-cap fa-1x"></i> CADASTRE-SE</a>
+            <a href="premium.html"><i class="fas fa-graduation-cap fa-1x"></i> PREMIUM</a>
+            <a href="sobre.html"><i class="fas fa-graduation-cap fa-1x"></i> SOBRE</a>
+        </nav>
+    </header>
+    <!-- fim do header -->
+
+    <main>
+        <div class="container bootstrap snippet">
+            <div class="position-left">
+                <div class="text-center">
+                    <h2>Nome do Usuario</h2>
+                    <img src="imagens/usuario.png" class=" image-circle" alt="usuario" id="imagemusuario">
+                    <h6>Seleciona uma foto diferente...</h6>
+                    <input type="file" onclick="trocarFoto()" class="text-center center-block file-upload">
+                </div><br>
+                <ul class="list-group">
+                    <li class="list-group-item text-muted "><a href="perfil.html">Perfil</a></li>
+                    <li class="list-group-item text-left"><a href="perfil.html">Interesse</a></li>
+                    <li class="list-group-item text-left"><a href="perfil.html">Grupo Criados</a></li>
+                    <li class="list-group-item text-left"><a href="#" data-toggle="modal" data-target="#myModal">Redefinir Senha</a></li>
+                    <br>
+                </ul>
+                <br>
+            </div>
+            <div class="position-right">
+                <form>
+                    <div class="input-field">
+                        <input type="text" id="nome" name="nome" required="required">
+                        <label for="nome">Nome </label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" id="lname" name="email" required="required">
+                        <label for="email">E-mail</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="estados">Estados</label>
+                        <select class="form-control" id="estados">
+                        <option disabled selected>Selecione</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                      </select>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" id="cidade" name="cidade" required="required">
+                        <label for="cidade">Cidade</label>
+                    </div>
+                    <div class="bt">
+                        <a href="perfil.html" class="button-proximo">SALVAR </a>
+                    </div>
+            </div>
+            </form>
+        </div>
+
+        </div>
+    </main>
+    <aside>
+
+
+        <!-- The Modal -->
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Redefinir Senha</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="input-field">
+                            <input type="password" id="senha" name="senha" required="required">
+                            <label for="senhaatual">Senha Atual </label><br>
+                        </div>
+                        <div class="input-field">
+                            <input type="password" id="novasenha" name="novasenha" required="required">
+                            <label for="novasenha">Nova Senha </label><br>
+                        </div>
+                        <div class="input-field">
+                            <input type="password" id="confirmarsenha" name="confirmarsenha" required="required">
+                            <label for="confirmarsenha">Confirmar Senha </label>
+                        </div>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-dismiss="modal">Salvar</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </section>
+    </aside>
+    <script src="trocarfoto.js"></script>
+</body>
+
+</html>
